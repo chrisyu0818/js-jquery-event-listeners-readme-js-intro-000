@@ -11,3 +11,11 @@ $("p").on("click", function(){
 function frameIt(){
   $("img").addClass("tasty")
 }
+function pressIt(){
+  $("input").on("keydown", function(){
+    if(key.which == 71){
+      alert
+    }
+    
+  })
+}
