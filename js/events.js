@@ -1,13 +1,15 @@
 //define functions here
 
 $(document).ready(function(){
+  $ ("p").on('click', getIt);
+  $ ('img').on('load', frameIt);
+   pressIt();
+   $ ('form').on("submit", submitIt);
+ });
 
-// call functions here
-});
 function getIt(){
-$("p").on("click", function(){
   alert ("Hey!")
-})}
+}
 function frameIt(){
   $("img").addClass("tasty")
 }
@@ -19,6 +21,5 @@ function pressIt(){
   })
 }
 function submitIt(){
-  $("form").on("submit", function() {
     alert('Your form is going to be submitted now.')
 }
