@@ -12,7 +12,7 @@ function frameIt(){
   $("img").addClass("tasty")
 }
 function pressIt(){
-  $("input").on("keydown", function(){
+  $("input").on("keydown", function(key){
     if(key.which == 71){
       alert("You have pressed G")
     }
